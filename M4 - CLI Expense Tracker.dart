@@ -37,8 +37,7 @@ class Transport extends Expense {
 }
 
 class Entertainment extends Expense {
-  Entertainment(String title, double amount)
-      : super(title, amount, 'Entertainment');
+  Entertainment(String title, double amount) : super(title, amount, 'Entertainment');
 
   @override
   String display() {
@@ -58,6 +57,7 @@ class ExpenseTracker {
     if (expenses.isEmpty) {
       print('No expenses recorded yet');
       return;
+
     }
 
     for (int i = 0; i < expenses.length; i++) {
@@ -92,7 +92,7 @@ void main() {
   bool running = true;
 
   while (running) {
-    print('\n===== Expense Tracker =====');
+    print('======= Expense Tracker =======');
     print('1. Add Expense');
     print('2. View All Expenses');
     print('3. Show Total Expenses');
